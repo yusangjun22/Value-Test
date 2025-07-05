@@ -45,6 +45,7 @@ questions.forEach((q, index) => {
 });
 
 document.getElementById('submit-btn').addEventListener('click', () => {
+  event.preventDefault();
   const formData = new FormData(quizForm);
   const scores = { God: [], World: [], Neighbor: [], Family: [], Money: [], Honor: [] };
 
